@@ -1,10 +1,6 @@
 const { Board, Cheese } = require("../models");
 const seed = require("../db/seed");
 
-beforeEach(async () => {
-	await seed();
-});
-
 describe("testing Board class", () => {
 	test("should have an id, a type, a description and a rating", async () => {
 		let board1 = await Board.findByPk(1);

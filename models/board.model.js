@@ -6,7 +6,7 @@ class Board extends Model {}
 Board.init(
 	{
 		type: DataTypes.STRING,
-		descrition: DataTypes.STRING,
+		description: DataTypes.STRING,
 		rating: DataTypes.NUMBER,
 	},
 	{
